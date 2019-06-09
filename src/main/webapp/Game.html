@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Game Time!!</title>
+<script type="text/javascript">
+function changeSubmit(){
+	document.getElementById("gameForm").action = "getRTP";
+	//document.getElementById("submit").submit();
+}
+
+</script>
+</head>
+<body>
+Hello there! Time to place a bet!<br>
+<form action="playNormalRound" method="POST" id="gameForm">
+<p>
+<input type=submit id="play" value="Click to play!" style="height: 20px; width: 100px;">
+<input type=submit id="getRTP" value="Or click here to know your RTP first!" style="height: 20px; width: 275px;" onclick="changeSubmit();">
+</p>
+</form>
+</body>
+</html>
